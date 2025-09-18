@@ -2,98 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Registration Form</title>
+  <title>My Semester Timetable</title>
 </head>
 <style>
   body{
-    background-color: chartreuse;
+    background-color: rgb(232, 238, 224);
   }
 </style>
 <body>
-  <h2>Student Registration Form</h2>
-  <form action="#" method="post">
-    
-    
-    <p>
-      Full Name: <input type="text" name="fullname" required>
-    </p>
-    
-    
-    <p>
-      Password: <input type="password" name="password" maxlength="12" required>
-    </p>
-    
-   
-    <p>
-      Email: <input type="email" name="email" required>
-    </p>
-    
-    
-    <p>
-      Age: <input type="number" name="age" min="16" max="100">
-    </p>
-    
-    
-    <p>
-      Date of Birth: <input type="date" name="dob">
-    </p>
-    
-   
-    <p>
-      Gender: 
-      <input type="radio" name="gender" value="male"> Male
-      <input type="radio" name="gender" value="female"> Female
-      <input type="radio" name="gender" value="other"> Other
-    </p>
-    
-    
-    <p>
-      Hobbies:
-      <input type="checkbox" name="hobby" value="reading"> Reading
-      <input type="checkbox" name="hobby" value="sports"> Sports
-      <input type="checkbox" name="hobby" value="music"> Music
-    </p>
-    
-    
-    <p>
-      Course: 
-      <select name="course">
-        <option value="cs">Computer Science</option>
-        <option value="it">Information Tech</option>
-        <option value="se">Software Eng</option>
-      </select>
-    </p>
-    
-    
-    <p>
-      Upload Passport Photo: 
-      <input type="file" name="photo">
-    </p>
-    
-    
-    <p>
-      Rate your computer skills (1-10): 
-      <input type="range" name="skills" min="1" max="10">
-    </p>
-    
-    
-    <p>
-      Favorite Color: 
-      <input type="color" name="favcolor">
-    </p>
-    
-   
-    <p>
-      Additional Notes:
-      <textarea name="notes" rows="4" cols="30"></textarea>
-    </p>
-    
-    
-    <p>
-      <input type="submit" value="Register">
-      <input type="reset" value="Clear">
-    </p>
-    
-  </form>
+  <table border="3">
+    <caption><b>My School Timetable</b></caption>
+    <tr>
+      <th>Day/Time</th>
+      <th>8am</th>
+      <th>10am</th>
+      <th>12pm</th>
+      <th>2pm</th>
+      <th>4pm</th>
+    </tr>
+    <tr>
+      <th>Monday</th>
+      <td colspan="2">CIS 210</td>
+      <td>CIS 211</td>
+      <td>CIS 212</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <th>Tuesday</th>
+      <td>CIS 122</td>
+      <td>CIS 133</td>
+      <td colspan="2">CIS 213</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <th>Wednesday</th>
+      <td>Mathematics</td>
+      <td colspan="2">Programming Lab</td>
+      <td>Free</td>
+      <td>Database</td>
+    </tr>
+    <tr>
+      <th>Thursday</th>
+      <td colspan="2">Networking</td>
+      <td>Operating Systems</td>
+      <td>Free</td>
+      <td>AI</td>
+    </tr>
+    <tr>
+      <th>Friday</th>
+      <td colspan="5">Project Work</td>
+    </tr>
+  </table>
 </body>
 </html>
